@@ -46,6 +46,8 @@ public class TarefaController {
         return new TarefaReponseDTO(savedTask);
     }
 
+    erro de proposito para a atividade
+    
     @GetMapping("/HEALTH")
     public String getStatus() {
         return "ok";
