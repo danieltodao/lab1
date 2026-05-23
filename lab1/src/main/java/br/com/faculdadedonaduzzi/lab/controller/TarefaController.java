@@ -44,11 +44,6 @@ public class TarefaController {
         newTask.setStatus(task.status());
         Task savedTask = taskRepository.save(newTask);
         return new TarefaReponseDTO(savedTask);
-
-
-    erro adicionado intencionalmente para dar problema no build
-
-
     }
 
     @GetMapping("/HEALTH")
