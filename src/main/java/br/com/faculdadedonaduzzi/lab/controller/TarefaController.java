@@ -45,9 +45,6 @@ public class TarefaController {
         Task savedTask = taskRepository.save(newTask);
         return new TarefaReponseDTO(savedTask);
     }
-
-    erro de proposito para a atividade
-    
     @GetMapping("/HEALTH")
     public String getStatus() {
         return "ok";
