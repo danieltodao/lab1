@@ -1,6 +1,6 @@
 FROM maven:3.9.6-eclipse-temurin-21 as builder
 WORKDIR /app
-COPY . .
+COPY lab1 .
 RUN mvn clean package -DskipTests
 
 FROM eclipse-temurin:21-jre as runtime
